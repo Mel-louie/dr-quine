@@ -48,10 +48,16 @@ The only Bonus accepted during the evaluation is to have redone this project ent
 
 ## Ressources
 https://cs.lmu.edu/~ray/notes/quineprograms/
+
 http://www.madore.org/~david/computers/quine.html
+
 https://towardsdatascience.com/how-to-write-your-first-quine-program-947f2b7e4a6f
+
 https://esolangs.org/wiki/User:Hakerh400/How_to_write_quines
+
 http://dwcope.freeshell.org/projects/quine/
+
 https://www.reddit.com/r/programming/comments/ki1jb6/quine_or_self_reproducing_program_written_using_c/
+
 
 https://www.youtube.com/watch?v=Jf8piyPSS70
