@@ -58,6 +58,7 @@ https://esolangs.org/wiki/User:Hakerh400/How_to_write_quines
 http://dwcope.freeshell.org/projects/quine/
 
 https://www.reddit.com/r/programming/comments/ki1jb6/quine_or_self_reproducing_program_written_using_c/
+https://github.com/Alexdelia/42-dr-quine
 
 
 https://www.youtube.com/watch?v=Jf8piyPSS70
