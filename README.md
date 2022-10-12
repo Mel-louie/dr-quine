@@ -23,8 +23,7 @@ The executable must be named Colleen.
   - Two different comments;
   - One of the comments must be present in the main function;
   - One of the comments must be present outside of your program;
-  - Another function in addition to the main function (which of course will be
-called).
+  - Another function in addition to the main function (which of course will be called).
 
 ## The second program:
 - The executable must be named Grace.
