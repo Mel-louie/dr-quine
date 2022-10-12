@@ -60,4 +60,12 @@ https://www.reddit.com/r/programming/comments/ki1jb6/quine_or_self_reproducing_p
 https://github.com/Alexdelia/42-dr-quine
 
 
+https://scienceetonnante.com/2012/03/19/les-quines-des-programmes-informatiques-auto-replicateurs/
+
+https://stackoverflow.com/questions/33534671/how-does-this-quine-work
+
+https://stackoverflow.com/questions/60212717/quine-program-example-in-c
+
+https://stackoverflow.com/questions/10238670/c-c-program-that-prints-its-own-source-code-as-its-output
+
 https://www.youtube.com/watch?v=Jf8piyPSS70
