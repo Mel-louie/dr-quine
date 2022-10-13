@@ -67,4 +67,6 @@ https://stackoverflow.com/questions/60212717/quine-program-example-in-c
 
 https://stackoverflow.com/questions/10238670/c-c-program-that-prints-its-own-source-code-as-its-output
 
+
+
 https://www.youtube.com/watch?v=Jf8piyPSS70
