@@ -27,8 +27,7 @@ The executable must be named Colleen.
 
 ## The second program:
 - The executable must be named Grace.
-- When executed, the program writes in a file named Grace_kid.c/Grace_kid.s
-the source code of the file used to compile the program.
+- When executed, the program writes in a file named Grace_kid.c/Grace_kid.s the source code of the file used to compile the program.
 - The source code must strickly contain:
   - No main declared;
   - Three defines only;
