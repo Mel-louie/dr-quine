@@ -30,6 +30,16 @@ test: re
 	@echo $(RESET) Grace:
 	@echo $(RED)
 	@./Grace; diff Grace.c Grace_kid.c
+	@echo $(RESET) Sully:
+	@./Sully
+	@ls -l | grep "Sully_" | wc -l > output
+	@echo "12" > ctrl; diff ctrl output
+	@diff Sully.c Sully_5.c
+	#diff Sully.c Sully_0.c
+	#diff Sully_3.c Sully_2.c
+
+	@rm ctrl output
+	
 
 clean:
 	@rm -f Colleen.o
