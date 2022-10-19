@@ -5,7 +5,7 @@ RESET="\033[0m"
 
 FLAGS = -Wall -Wextra -Werror #-fsanitize=address
 CC = clang
-NAME = Colleen Grace #Sully
+NAME = Colleen Grace Sully
 
 NAME: all
 
@@ -18,9 +18,9 @@ Colleen: Colleen.c
 Grace: Grace.c
 	@$(CC) $(FLAGS) -c Grace.c -o Grace.o
 	@$(CC) $(FLAGS) Grace.o -o Grace
-# Sully: Sully.c
-# 	$(CC) $(FLAGS) -c Sully.c -o Sully.o
-# 	$(CC) $(FLAGS) Sully.o -o Sully
+Sully: Sully.c
+	@$(CC) $(FLAGS) -c Sully.c -o Sully.o
+	@$(CC) $(FLAGS) Sully.o -o Sully
 
 test: re
 	@echo
@@ -34,12 +34,12 @@ test: re
 clean:
 	@rm -f Colleen.o
 	@rm -f Grace.o
-	#@rm -f Sully.o
+	@rm -f Sully.o
 	@echo "Cleaning done"
 
 fclean: clean
 	@rm -rf Colleen Grace Sully
-	#@rm -f Sully_*
+	@rm -f Sully_*
 	@rm -f Grace_kid.c
 	@echo "fcleaning done"
 
