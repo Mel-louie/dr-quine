@@ -1,3 +1,8 @@
+#### COLORS ####
+RED="\033[31m"
+GREEN="\033[32m"
+RESET="\033[0m"
+
 C_NAME		:= Colleen
 LD			:= clang
 LDFLAGS		:= -Wall -Wextra -Werror
@@ -15,6 +20,12 @@ $(C_NAME): $(C_OBJS)
 
 %.o :%.s
 	$(CC) $(CFLAGS) $< -o $@
+
+test: re
+	@echo
+	@echo $(RESET) Colleen:
+	@echo $(RED)
+	@./Colleen > tmp_Colleen; diff tmp_Colleen Colleen.s; rm tmp_Colleen
 
 clean:
 	rm -rf $(C_OBJS)
