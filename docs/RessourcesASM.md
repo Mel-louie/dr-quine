@@ -28,5 +28,11 @@ https://www.gladir.com/LEXIQUE/ASM/ret.htm
 https://c9x.me/x86/html/file_module_x86_id_280.html
 
 
-### To view the ASM of a C program:
+## To view the ASM of a C program:
 `clang -S file.c` or `gcc -S file.c`. And check the new `file.s` The two compilers send slightly different ASM codes, so it's pretty cool to compare the two.
+
+`gdb binaryName` open your binary for debug. `disas functionYouWantToCheck` show you the function disassembled.
+
+## Cheatsheet
+x64 assembly cheatsheet https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
+

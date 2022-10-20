@@ -4,6 +4,7 @@ GREEN="\033[32m"
 RESET="\033[0m"
 
 C_NAME		:= Colleen
+G_NAME		:= Grace
 LD			:= clang
 LDFLAGS		:= -Wall -Wextra -Werror
 
@@ -12,11 +13,15 @@ CFLAGS		:= -f elf64
 
 C_SRCS 		:= Colleen.s
 C_OBJS		:= $(C_SRCS:.s=.o)
+G_SRCS 		:= Grace.s
+G_OBJS		:= $(G_SRCS:.s=.o)
 
-all:	$(C_NAME)
+all:	$(C_NAME) $(G_NAME)
 
 $(C_NAME): $(C_OBJS)
 	$(LD) $(LDFLAGS) $(C_OBJS) -o $(C_NAME)
+$(G_NAME):	$(G_OBJS)
+	$(LD) $(LDFLAGS) $(G_OBJS) -o $(G_NAME)
 
 %.o :%.s
 	$(CC) $(CFLAGS) $< -o $@
@@ -30,9 +35,14 @@ test: re
 clean:
 	rm -rf $(C_OBJS)
 	rm -f $(C_NAME).out
+	rm -f $(G_OBJS)
+	rm -f $(G_NAME).out
+	rm -rf tmp_Colleen
 
 fclean: clean
 	rm -f $(C_NAME)
+	rm -f $(G_NAME)
+	rm -f Grace_kid.s
 
 re: fclean all
 
