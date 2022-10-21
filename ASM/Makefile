@@ -17,14 +17,15 @@ G_SRCS 		:= Grace.s
 G_OBJS		:= $(G_SRCS:.s=.o)
 
 all:	$(C_NAME) $(G_NAME)
+	@echo $(GREEN) "Done!"
 
 $(C_NAME): $(C_OBJS)
-	$(LD) $(LDFLAGS) $(C_OBJS) -o $(C_NAME)
+	@$(LD) $(LDFLAGS) $(C_OBJS) -o $(C_NAME)
 $(G_NAME):	$(G_OBJS)
-	$(LD) $(LDFLAGS) $(G_OBJS) -o $(G_NAME)
+	@$(LD) $(LDFLAGS) $(G_OBJS) -o $(G_NAME)
 
 %.o :%.s
-	$(CC) $(CFLAGS) $< -o $@
+	@$(CC) $(CFLAGS) $< -o $@
 
 test: re
 	@echo
@@ -33,16 +34,16 @@ test: re
 	@./Colleen > tmp_Colleen; diff tmp_Colleen Colleen.s; rm tmp_Colleen
 
 clean:
-	rm -rf $(C_OBJS)
-	rm -f $(C_NAME).out
-	rm -f $(G_OBJS)
-	rm -f $(G_NAME).out
-	rm -rf tmp_Colleen
+	@rm -rf $(C_OBJS)
+	@rm -f $(C_NAME).out
+	@rm -f $(G_OBJS)
+	@rm -f $(G_NAME).out
+	@rm -rf tmp_Colleen
 
 fclean: clean
-	rm -f $(C_NAME)
-	rm -f $(G_NAME)
-	rm -f Grace_kid.s
+	@rm -f $(C_NAME)
+	@rm -f $(G_NAME)
+	@rm -f Grace_kid.s
 
 re: fclean all
 
